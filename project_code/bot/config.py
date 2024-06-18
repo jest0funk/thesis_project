@@ -14,6 +14,6 @@ model_names = [
     '11_r480_rsT_lr5_e0s2000'
 ]
 
-model_idx = 1
+model_idx = 3
 
 model_name = model_names[model_idx]

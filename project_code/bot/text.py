@@ -41,12 +41,21 @@ wait_messages = [
 def gen_wait():
     return random.choice(wait_messages)
 
+gen_standard = "..."
 
-sample_tasks = [
-    "Two hens lay 2 eggs in two days. How many eggs will 4 hens lay in three days?",
-    "Две курицы сносят 2 яйца за два дня. Сколько яиц снесут 4 курицы за три дня?"
-]
+sample_tasks = {
+    "English": "Two hens lay 2 eggs in two days. How many eggs will 4 hens lay in three days?",
+    "Chinese": "两只母鸡在两天内产下2个蛋。 4只母鸡在三天内会下多少个蛋？",
+    "French": "Deux poules pondent 2 œufs en deux jours. Combien d'œufs 4 poules pondent en trois jours?",
+    "German": "Zwei Hühner legen 2 Eier in zwei Tagen. Wie viele Eier werden 4 Hühner in drei Tagen legen?",
+    "Japanese": "2つの鶏は2日で2つの卵を産みます。 4羽の鶏は3日でいくつの卵を産みますか？",
+    "Russian": "Две курицы сносят 2 яйца за два дня. Сколько яиц снесут 4 курицы за три дня?",
+    "Spanish": "Dos gallinas ponen 2 huevos en dos días. ¿Cuántos huevos pondrán 4 gallinas en tres días?",
+    "Swahili": "Kuku wawili hutaga mayai 2 kwa siku mbili. Kuku 4 watataga mayai mangapi kwa siku tatu?"
+}
 
-toggle_text = "--- Visibility of repeated prompt instruction is turned {toggle_state}"
+toggle_text = {'show_instructions': "--- Visibility of repeated prompt instruction is turned {toggle_state}",
+               'show_exclamations': "--- Pre-generation funny bot messages are turned {toggle_state}"}
 split_delimiter = "### Response:\n"
+
 msg_delimiter = f"\n{'-'*20}\n"

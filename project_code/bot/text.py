@@ -16,10 +16,10 @@ Below is an instruction that describes a task. Write a response that appropriate
 {answer}"""
 
 
-in_text = """Language set to {language}.
+in_text = """▪ Language set to {language}.
 Now the model expects instructions in {language} and will be asked to reply in {language} as well."""
 
-gen_exit = "---To quit to the menu press the button below"
+gen_exit = "▪ To quit to the menu press the button below"
 gen_error = """Oops... I've pressed something and everything just broke down. 😬
 Mind trying again?"""
 
@@ -54,8 +54,31 @@ sample_tasks = {
     "Swahili": "Kuku wawili hutaga mayai 2 kwa siku mbili. Kuku 4 watataga mayai mangapi kwa siku tatu?"
 }
 
-toggle_text = {'show_instructions': "--- Visibility of repeated prompt instruction is turned {toggle_state}",
-               'show_exclamations': "--- Pre-generation funny bot messages are turned {toggle_state}"}
+toggle_text = {'show_instructions': "▪ Visibility of repeated prompt instruction is turned {toggle_state}",
+               'show_exclamations': "▪ Pre-generation funny bot messages are turned {toggle_state}"}
 split_delimiter = "### Response:\n"
 
 msg_delimiter = f"\n{'-'*20}\n"
+
+help_text = """This bot is using a LLama family model. 
+It can chat and solve math tasks (someteimes correctly).
+
+▪ By pressing a language button, you select certain language for further messaging or task solving.
+
+▪ By pressing a 'Sample task...' button you select a language and send a sample task to the bot for solving. 
+After getting the solution from the bot you can continue messaging or tasking in the same language.
+
+▪ 'Toggle instruction visibility' turns on and off repeated prompt instructions in bot responses.
+
+▪ 'Toggle funny messages' turns on and off the almost funny bot messages which are later replaced by model generated text. 
+While simply chatting with no math tasks such bot exclamations may look weird.
+
+▪ To quit to the menu when necessary, press the button at the bottom.
+
+In case of bot freezing restart it by the /start command or just delete the whole chat and join it again.
+
+
+Have fun! 🤩
+
+
+"""

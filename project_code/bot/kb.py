@@ -17,8 +17,8 @@ menu = [
     InlineKeyboardButton(text="🧩 Sample task in Spanish", callback_data="sample_Spanish")],
     [InlineKeyboardButton(text="🇸🇿 Swahili", callback_data="Swahili"),
     InlineKeyboardButton(text="🧩 Sample task in Swahili", callback_data="sample_Swahili")],
-    [InlineKeyboardButton(text="🏳 Toggle instruction visibility", callback_data="show_instructions"),
-    InlineKeyboardButton(text="🏳 Toggle 'funny' messages", callback_data="show_exclamations")],
+    [InlineKeyboardButton(text="⚙ Toggle instruction visibility", callback_data="show_instructions"),
+    InlineKeyboardButton(text="⚙ Toggle funny messages", callback_data="show_exclamations")],
     [InlineKeyboardButton(text="🔍Help", callback_data="help")]
 ]
 

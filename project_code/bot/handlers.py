@@ -35,6 +35,15 @@ async def menu(msg: Message):
     await msg.answer(text.menu, reply_markup=kb.menu)
 
 
+@router.message(Command("help"))
+async def help_txt(msg: Message):
+    await msg.answer(text.help_text, reply_markup=kb.exit_kb)
+
+@router.callback_query(F.data == "help")
+async def help_txt_clbck(clbck: CallbackQuery):
+    await help_txt(clbck.message)
+
+
 @router.callback_query(F.data == "English")
 @router.callback_query(F.data == "Chinese")
 @router.callback_query(F.data == "French")

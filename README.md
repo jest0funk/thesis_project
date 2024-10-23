@@ -31,4 +31,4 @@ Open the Jupiter Notebook below to run the code step by step and follow the stag
 
 ## Credentials disclaimer
 
-*All access tokens used in the code are guaranteed to be valid until July 30, 2024 only, and are subject to disabling afterwards without any additional notice.*
+*All access tokens used in the code are subject to disabling without prior notice.*

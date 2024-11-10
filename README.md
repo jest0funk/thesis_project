@@ -26,7 +26,7 @@ Open the Jupiter Notebook below to run the code step by step and follow the stag
 
 ## The thesis paper
 
-[Thesis paper](https://github.com/jest0funk/thesis_paper/the_paper/HSE_MDS_thesis_Lemiasheuski.pdf) - Multilingual Telegram-Bot Based on a Large Language Model with Mathematical Reasoning
+[Thesis paper](https://github.com/jest0funk/thesis_project/the_paper/HSE_MDS_thesis_Lemiasheuski.pdf) - Multilingual Telegram-Bot Based on a Large Language Model with Mathematical Reasoning
 
 
 ## Credentials disclaimer
